@@ -1,0 +1,12 @@
+{
+  "name": "after-12-ws-hbs",
+  "version": "1.0.0",
+  "description": "An example of DESAFIO 6 for my Backend Classes at Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alex Marin Mendez",
+  "license": "ISC"
+}
