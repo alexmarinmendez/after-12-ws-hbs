@@ -31,6 +31,10 @@ npm i express express-handlebars
 
 ![Template files](https://i.imgur.com/9QspBer.jpg)
 
+## Paso 5
+* Crear el model de productos (Temporalmente con persistencia en memoria. Más adelante la cambiaremos a persistencia en archivo)
+* Crear la clase ProductManager con los métodos necesarios para las operaciones solicitadas.
+
 
 ## Autor ✒️
 
