@@ -22,6 +22,9 @@ npm init -y
 npm i express express-handlebars
 ```
 
+## Paso 3
+* Crear el servidor express en el puerto 8080 para DEV y process.env.PORT para PROD
+
 
 ## Autor ✒️
 
