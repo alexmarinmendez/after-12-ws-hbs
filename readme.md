@@ -25,6 +25,12 @@ npm i express express-handlebars
 ## Paso 3
 * Crear el servidor express en el puerto 8080 para DEV y process.env.PORT para PROD
 
+## Paso 4
+* Setear el motor de plantillas (handlebars en este caso)
+* Crear las plantillas dentro de la carpeta views
+
+![Template files](https://i.imgur.com/9QspBer.jpg)
+
 
 ## Autor ✒️
 
