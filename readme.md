@@ -62,6 +62,9 @@ npm i socket.io
 * Emitir, del servidor a todos los clientes conectados, la lista de productos actualizada
 * Recibir en el cliente la lista de productos actualizada y renderizarla en la vista
 
+## Paso 11
+* Emitir la lista de productos al conectarse un nuevo cliente
+
 ## Autor ✒️
 
 * **Alex Marin Mendez** - *FullStack Javascript Web Developer*, 16 de setiembre de 2022 - [alexmarinmendez](https://github.com/alexmarinmendez)

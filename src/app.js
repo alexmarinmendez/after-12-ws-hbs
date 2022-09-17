@@ -2,6 +2,7 @@ const express = require('express')
 const { Server } = require('socket.io')
 const handlebars = require('express-handlebars')
 const productRouter = require('./routes/product.router')
+let products = require('./models/product.model')
 
 const app = express()
 const PORT = process.env.PORT || 8080
@@ -24,6 +25,7 @@ app.use('/products', productRouter)
 
 io.on('connection', socket => {
     console.log(`Client ${socket.id} connected...`)
+    socket.emit('history', products)
     socket.on('message', data => {
         io.emit('history', data)
     })
