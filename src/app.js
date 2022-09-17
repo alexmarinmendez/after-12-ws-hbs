@@ -1,6 +1,7 @@
 const express = require('express')
 const handlebars = require('express-handlebars')
 const productRouter = require('./routes/product.router')
+let products = require('./models/product.model')
 
 const app = express()
 const PORT = process.env.PORT || 8080
@@ -13,7 +14,9 @@ app.set('views', __dirname+'/views') // app.set('views', './src/views')
 app.set('view engine', 'handlebars')
 
 app.get('/', (req, res) => {
-    res.render('create-product')
+    res.render('create-product', {
+        products
+    })
 })
 
 app.use('/products', productRouter)

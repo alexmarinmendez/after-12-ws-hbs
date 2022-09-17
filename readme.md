@@ -39,6 +39,9 @@ npm i express express-handlebars
 * Crear las rutas con base /products utilizando el router de express
 * Configurar el router de products en el servidor
 
+## Paso 7
+* Modiificar la plantilla HBS para que muestre los products creados debajo del formulario
+
 
 ## Autor ✒️
 
