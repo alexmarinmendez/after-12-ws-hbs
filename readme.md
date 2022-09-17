@@ -43,6 +43,16 @@ npm i express express-handlebars
 * Modiificar la plantilla HBS para que muestre los products creados debajo del formulario
 
 
+## Paso 8
+* Instalar la librería socket.io
+```sh
+npm i socket.io
+```
+* Crear el servidor Web Socket
+* Configurar el socket del lado del cliente (view)
+* Configurar el evento connection del lado del servidor
+
+
 ## Autor ✒️
 
 * **Alex Marin Mendez** - *FullStack Javascript Web Developer*, 16 de setiembre de 2022 - [alexmarinmendez](https://github.com/alexmarinmendez)
