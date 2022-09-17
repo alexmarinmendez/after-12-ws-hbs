@@ -9,25 +9,4 @@
     <input type="submit">
 </form>
 <hr />
-{{#if products}}
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Product name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Thumbnail</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-    {{#each products}}
-        <tr>
-            <td>{{this.title}}</td>
-            <td>$ {{this.price}}</td>
-            <td><img src={{this.thumbnail}} width="50"></td>
-        </tr>
-    {{/each}}
-            </tbody>
-        </table>
-{{else}}
-<p>There is no data to show</p>
-{{/if}}
+<div id="history">There is no data to show</div>

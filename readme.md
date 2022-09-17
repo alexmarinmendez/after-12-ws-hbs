@@ -56,6 +56,11 @@ npm i socket.io
 * Modificar el formulario del template para manejar el envío por Javascript (esto es necesario para emitir un mensaje al server mediante socket cuando el formulario es enviado)
 * Escribir la función handler en el archivo Javascript
 
+## Paso 10
+* Emitir, del cliente al servidor, la lista de productos actualizada luego de enviado el formulario
+* Recibir en el servidor la lista de productos actualizada
+* Emitir, del servidor a todos los clientes conectados, la lista de productos actualizada
+* Recibir en el cliente la lista de productos actualizada y renderizarla en la vista
 
 ## Autor ✒️
 

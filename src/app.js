@@ -2,7 +2,6 @@ const express = require('express')
 const { Server } = require('socket.io')
 const handlebars = require('express-handlebars')
 const productRouter = require('./routes/product.router')
-let products = require('./models/product.model')
 
 const app = express()
 const PORT = process.env.PORT || 8080
@@ -18,13 +17,14 @@ app.set('views', __dirname+'/views') // app.set('views', './src/views')
 app.set('view engine', 'handlebars')
 
 app.get('/', (req, res) => {
-    res.render('create-product', {
-        products
-    })
+    res.render('create-product')
 })
 
 app.use('/products', productRouter)
 
 io.on('connection', socket => {
     console.log(`Client ${socket.id} connected...`)
+    socket.on('message', data => {
+        io.emit('history', data)
+    })
 })
