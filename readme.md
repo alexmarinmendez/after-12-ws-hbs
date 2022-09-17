@@ -52,6 +52,10 @@ npm i socket.io
 * Configurar el socket del lado del cliente (view)
 * Configurar el evento connection del lado del servidor
 
+## Paso 9
+* Modificar el formulario del template para manejar el envío por Javascript (esto es necesario para emitir un mensaje al server mediante socket cuando el formulario es enviado)
+* Escribir la función handler en el archivo Javascript
+
 
 ## Autor ✒️
 
