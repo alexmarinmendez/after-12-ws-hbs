@@ -35,6 +35,10 @@ npm i express express-handlebars
 * Crear el model de productos (Temporalmente con persistencia en memoria. Más adelante la cambiaremos a persistencia en archivo)
 * Crear la clase ProductManager con los métodos necesarios para las operaciones solicitadas.
 
+## Paso 6
+* Crear las rutas con base /products utilizando el router de express
+* Configurar el router de products en el servidor
+
 
 ## Autor ✒️
 
