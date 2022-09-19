@@ -2,7 +2,9 @@ const express = require('express')
 const { Server } = require('socket.io')
 const handlebars = require('express-handlebars')
 const productRouter = require('./routes/product.router')
+const chatRouter = require('./routes/chat.router')
 let products = require('./models/product.model')
+let chatHistory = require('./models/chat.model')
 
 const app = express()
 const PORT = process.env.PORT || 8080
@@ -22,11 +24,16 @@ app.get('/', (req, res) => {
 })
 
 app.use('/products', productRouter)
+app.use('/chat', chatRouter)
 
 io.on('connection', socket => {
     console.log(`Client ${socket.id} connected...`)
     socket.emit('history', products)
-    socket.on('message', data => {
+    socket.emit('chatHistory', chatHistory)
+    socket.on('products', data => {
         io.emit('history', data)
+    })
+    socket.on('chat', data => {
+        io.emit('chatHistory', data)
     })
 })

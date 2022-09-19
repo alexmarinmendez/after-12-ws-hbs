@@ -65,6 +65,14 @@ npm i socket.io
 ## Paso 11
 * Emitir la lista de productos al conectarse un nuevo cliente
 
+## Paso 12
+* Modificar el template create-product.handlebars para mostrar un formulario de chat (no olvidar colocar un div para inyectar el historial de mensajes)
+* Asignar un eventlistener al formulario de chat en el script del cliente (adaptar el mismo handler usado para el formulario de productos)
+* Capturar el evento emitido por el servidor socket con el historial de mensajes
+* Crear la ruta para chat (POST y GET son suficientes)
+* Crear el model (temporalmente con persistencia en memoria solamente, después lo cambiaremos a persistencia en archivo) para el chat
+* Crear la clase manager para el chat
+
 ## Autor ✒️
 
 * **Alex Marin Mendez** - *FullStack Javascript Web Developer*, 16 de setiembre de 2022 - [alexmarinmendez](https://github.com/alexmarinmendez)
