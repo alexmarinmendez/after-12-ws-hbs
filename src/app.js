@@ -4,7 +4,9 @@ const handlebars = require('express-handlebars')
 const productRouter = require('./routes/product.router')
 const chatRouter = require('./routes/chat.router')
 let products = require('./models/product.model')
-let chatHistory = require('./models/chat.model')
+
+const Manager = require('./controllers/chat.manager')
+const manager = new Manager()
 
 const app = express()
 const PORT = process.env.PORT || 8080
@@ -29,7 +31,7 @@ app.use('/chat', chatRouter)
 io.on('connection', socket => {
     console.log(`Client ${socket.id} connected...`)
     socket.emit('history', products)
-    socket.emit('chatHistory', chatHistory)
+    manager.findAll().then(result => socket.emit('chatHistory', result))
     socket.on('products', data => {
         io.emit('history', data)
     })

@@ -73,6 +73,9 @@ npm i socket.io
 * Crear el model (temporalmente con persistencia en memoria solamente, después lo cambiaremos a persistencia en archivo) para el chat
 * Crear la clase manager para el chat
 
+## Paso 13
+* Cambiar la persistencia del chat a persistencia en archivo
+
 ## Autor ✒️
 
 * **Alex Marin Mendez** - *FullStack Javascript Web Developer*, 16 de setiembre de 2022 - [alexmarinmendez](https://github.com/alexmarinmendez)
